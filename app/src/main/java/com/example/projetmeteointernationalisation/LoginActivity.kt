@@ -12,6 +12,8 @@ class LoginActivity : AppCompatActivity() {
 
     lateinit var mBtn :Button
 
+    lateinit var test : Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login)
