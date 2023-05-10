@@ -1,0 +1,28 @@
+<resources>
+    //page de connexion
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="txtLogin">Login page</string>
+    <string name="btnLogin">Connection</string>
+    <string name="btnTraduction">Change language</string>
+
+    //page principale
+    <string name="app_name">Weather Channel</string>
+    <string name="action_settings">Settings</string>
+    <string name="messages_received">Rx:</string>
+    <string name="publish_to_topic">Send to topic</string>
+    <string name="publish">Publish</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="subscribe_to_topic">Receive from topic</string>
+    <string name="message_payload">Message received</string>
+    <string name="topicHumidite">zigbee2mqtt/0x00124b00251323c1/humidity</string>
+    <string name="messageInfo">Here is the data that we can retrieve thanks to the broker</string>
+
+    //page parametre
+    <string name="broker">Broker</string>
+    <string name="api">API</string>
+    <string name="minRange">Minimum value</string>
+    <string name="maxRange">Maximum value</string>
+    <string name="txtSettings">Settings page</string>
+    <string name="btnSettings">Save</string>
+</resources>
