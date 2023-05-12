@@ -28,8 +28,6 @@ class LoginActivity : AppCompatActivity() {
         val password = findViewById<EditText>(R.id.password)
         val mBtn = findViewById<Button>(R.id.traductionButton)
 
-        
-
         mBtn.setOnClickListener {
             showChangeLanguage()
         }
@@ -48,7 +46,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun showChangeLanguage() {
-        val listItmes = arrayOf("Francais", "English")
+        val listItmes = arrayOf("Francais", "English", "Deutsch")
 
         val mBuilder = AlertDialog.Builder(this@LoginActivity)
         mBuilder.setTitle("Choisissez votre langue")
@@ -59,6 +57,10 @@ class LoginActivity : AppCompatActivity() {
             }
             if (which == 1){
                 setLocate("en")
+                recreate()
+            }
+            if (which == 2){
+                setLocate("de")
                 recreate()
             }
 
