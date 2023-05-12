@@ -8,7 +8,7 @@
 
     //page principale
     <string name="app_name">Station météo</string>
-    <string name="action_settings">Paramètre</string>
+    <string name="action_settings">Paramètres</string>
     <string name="messages_received">Rx:</string>
     <string name="publish_to_topic">Envoyer au topic</string>
     <string name="publish">Publier</string>
