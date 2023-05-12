@@ -15,7 +15,7 @@
         android:layout_marginTop="108dp"
         android:layout_marginEnd="108dp"
         android:layout_marginRight="108dp"
-        android:text="Nombre de message récupérés :"
+        android:text="@string/message_payload"
         app:layout_constraintEnd_toStartOf="@+id/textViewNumMsgs"
         app:layout_constraintHorizontal_bias="0.793"
         app:layout_constraintLeft_toLeftOf="parent"
