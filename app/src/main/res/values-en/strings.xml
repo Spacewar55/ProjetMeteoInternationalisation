@@ -6,6 +6,9 @@
     <string name="txtLogin">Login page</string>
     <string name="btnLogin">Connection</string>
     <string name="btnTraduction">Change language</string>
+    <string name="txtConnectionY">Successful connection</string>
+    <string name="txtConnectionN">Failed connection</string>
+    <string name="txtChooseLanguage">Choose your language</string>
 
     //page principale
     <string name="app_name">Weather Channel</string>

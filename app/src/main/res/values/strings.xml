@@ -5,6 +5,9 @@
     <string name="txtLogin">Page de connexion</string>
     <string name="btnLogin">Connexion</string>
     <string name="btnTraduction">Changer la langue</string>
+    <string name="txtConnectionY">Connexion réussie</string>
+    <string name="txtConnectionN">Connexion échouée</string>
+    <string name="txtChooseLanguage">Choisissez votre langue</string>
 
     //page principale
     <string name="app_name">Station météo</string>

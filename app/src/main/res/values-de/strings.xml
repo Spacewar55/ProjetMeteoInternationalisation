@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //page de connexion
+    <string name="username">Benutzer</string>
+    <string name="password">Passwort</string>
+    <string name="txtLogin">Loginseite</string>
+    <string name="btnLogin">Anmeldung</string>
+    <string name="btnTraduction">Ändere die Sprache</string>
+    <string name="txtConnectionY">Erfolgreiche Verbindung</string>
+    <string name="txtConnectionN">Verbindung fehlgeschlagen</string>
+    <string name="txtChooseLanguage">Wähle deine Sprache</string>
+
+    //page principale
+    <string name="app_name">Wetter Kanal</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="messages_received">Rx:</string>
+    <string name="publish_to_topic">Senden an topic</string>
+    <string name="publish">Veröffentlichen</string>
+    <string name="subscribe">Erhalten</string>
+    <string name="subscribe_to_topic">Erhalten von topic</string>
+    <string name="message_payload">Nachricht erhalten</string>
+    <string name="topicHumidite">zigbee2mqtt/0x00124b00251323c1/humidity</string>
+    <string name="messageInfo">Hier sind die Daten, die wir dank des wiederherstellen können broker</string>
+
+    //page parametre
+    <string name="broker">Broker</string>
+    <string name="api">API</string>
+    <string name="minRange">Mindestwert</string>
+    <string name="maxRange">Höchster Wert</string>
+    <string name="txtSettings">Einstellungsseite</string>
+    <string name="btnSettings">Registrieren</string>
+</resources>

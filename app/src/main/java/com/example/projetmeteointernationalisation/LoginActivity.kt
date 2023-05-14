@@ -37,19 +37,19 @@ class LoginActivity : AppCompatActivity() {
             if (username.text.toString() == "alexds2000@outlook.fr" && password.text.toString() == "1234"){
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
-                Toast.makeText(this, "Connexion réussie!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.txtConnectionY), Toast.LENGTH_SHORT).show()
             }
             else {
-                Toast.makeText(this, "Connexion échouée!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.txtConnectionN), Toast.LENGTH_SHORT).show()
             }
         }
     }
 
     private fun showChangeLanguage() {
-        val listItmes = arrayOf("Francais", "English", "Deutsch")
+        val listItmes = arrayOf("Francais", "English", "Deutsch", "Spanish")
 
         val mBuilder = AlertDialog.Builder(this@LoginActivity)
-        mBuilder.setTitle("Choisissez votre langue")
+        mBuilder.setTitle(R.string.txtChooseLanguage)
         mBuilder.setSingleChoiceItems(listItmes, -1) { dialog, which ->
             if (which == 0){
                 setLocate("fr")
@@ -61,6 +61,10 @@ class LoginActivity : AppCompatActivity() {
             }
             if (which == 2){
                 setLocate("de")
+                recreate()
+            }
+            if (which == 3){
+                setLocate("es")
                 recreate()
             }
 
