@@ -29,4 +29,6 @@
     <string name="maxRange">Maximum value</string>
     <string name="txtSettings">Settings page</string>
     <string name="btnSettings">Save</string>
+    <string name="txtSettingsY">Broker and API fields must not be empty</string>
+    <string name="txtSettingsN">Saved Settings</string>
 </resources>

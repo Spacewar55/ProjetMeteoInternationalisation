@@ -29,4 +29,6 @@
     <string name="maxRange">Valor máximo</string>
     <string name="txtSettings">Página de configuración</string>
     <string name="btnSettings">Registro</string>
+    <string name="txtSettingsY">Los campos de Broker y API no deben estar vacíos</string>
+    <string name="txtSettingsN">Configuraciones guardadas</string>
 </resources>

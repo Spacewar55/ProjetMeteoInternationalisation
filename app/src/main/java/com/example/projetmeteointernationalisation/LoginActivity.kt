@@ -1,3 +1,12 @@
+/**
+Vue Login de l'application
+@author Alex De Souza
+    @version 1.0 17/02/23
+        Création de la page + fonctionnement
+    @version 2.0 14/05/23
+        Ajout du bouton d'internationalisation
+ */
+
 package com.example.projetmeteointernationalisation
 
 import android.content.Context
@@ -6,9 +15,7 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import android.content.Intent
 import android.content.res.Configuration
-import android.media.audiofx.DynamicsProcessing.Config
 import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import java.util.Locale
@@ -19,6 +26,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        //Appel de la fonction
         loadLocate()
 
         setContentView(R.layout.login)
@@ -28,6 +36,7 @@ class LoginActivity : AppCompatActivity() {
         val password = findViewById<EditText>(R.id.password)
         val mBtn = findViewById<Button>(R.id.traductionButton)
 
+        //Appel de la fonction lors du clique sur le bouton
         mBtn.setOnClickListener {
             showChangeLanguage()
         }
@@ -45,6 +54,7 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
+    //Fonction qui contient la liste des différentes langues
     private fun showChangeLanguage() {
         val listItmes = arrayOf("Francais", "English", "Deutsch", "Spanish")
 
@@ -67,7 +77,6 @@ class LoginActivity : AppCompatActivity() {
                 setLocate("es")
                 recreate()
             }
-
             dialog.dismiss()
         }
         val mDialog = mBuilder.create()
@@ -75,6 +84,7 @@ class LoginActivity : AppCompatActivity() {
         mDialog.show()
     }
 
+    //Fonction qui permet de trqduire l'application en fonction de la langue choisie
     private fun setLocate(Language: String) {
         val locale = Locale(Language)
         Locale.setDefault(locale)
@@ -87,6 +97,7 @@ class LoginActivity : AppCompatActivity() {
         editor.apply()
     }
 
+    //Fonction qui permet de garder en mémoire la derniere langue choisie
     private fun loadLocate() {
         val sharedPreferences = getSharedPreferences("Parametres", Context.MODE_PRIVATE)
         val language = sharedPreferences.getString("Mon_language", "")
