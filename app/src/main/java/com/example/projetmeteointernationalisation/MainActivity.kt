@@ -1,3 +1,10 @@
+/**
+Vue Principale de l'application
+@author Alex De Souza
+    @version 1.0 17/02/23
+        Création de la page + fonctionnement
+ */
+
 package com.example.projetmeteointernationalisation
 
 import android.content.Intent

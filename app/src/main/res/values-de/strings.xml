@@ -29,4 +29,6 @@
     <string name="maxRange">Höchster Wert</string>
     <string name="txtSettings">Einstellungsseite</string>
     <string name="btnSettings">Registrieren</string>
+    <string name="txtSettingsY">Broker und API felder dürfen nicht leer sein</string>
+    <string name="txtSettingsN">Gespeicherte Einstellungen</string>
 </resources>

@@ -28,4 +28,6 @@
     <string name="maxRange">Valeur maximale</string>
     <string name="txtSettings">Page de paramètres</string>
     <string name="btnSettings">Enregistrer</string>
+    <string name="txtSettingsY">Les champs Broker et API ne doivent pas être vide</string>
+    <string name="txtSettingsN">Paramètres enregistrés</string>
 </resources>

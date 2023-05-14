@@ -1,3 +1,10 @@
+/**
+Vue Principale de l'application
+@author Alex De Souza
+    @version 1.0 17/02/23
+        Création de la page + fonctionnement
+ */
+
 package com.example.projetmeteointernationalisation
 
 import android.content.Intent
@@ -22,12 +29,12 @@ class ParametreActivity : AppCompatActivity() {
         //Si vide = erreur sinon retour à la page principale
         settingButton.setOnClickListener {
             if (broker.text.toString() == "" || api.text.toString() == ""){
-                Toast.makeText(this, "Les champs Broker et API ne doivent pas être vide", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.txtSettingsN), Toast.LENGTH_SHORT).show()
             }
             else {
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
-                Toast.makeText(this, "Paramètres enregistrés", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.txtSettingsY), Toast.LENGTH_SHORT).show()
             }
         }
     }
